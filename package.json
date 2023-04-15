@@ -6,6 +6,17 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdanks2000/fancyconsolelog"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "fancy",
+    "node",
+    "typescript"
+  ],
   "license": "MIT",
   "description": "A fancy console log for node.js",
   "scripts": {
