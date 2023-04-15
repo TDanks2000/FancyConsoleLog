@@ -1,6 +1,6 @@
 {
   "name": "@tdanks2000/fancyconsolelog",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "publishConfig": {
