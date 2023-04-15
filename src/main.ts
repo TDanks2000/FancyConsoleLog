@@ -16,7 +16,7 @@ class Console {
     this.background = background;
   }
 
-  log(message: string, ...args: any) {
+  log(message: string, ...args: any): any {
     if (this.color && !this.background)
       return console.log(chalk[this.color](message), ...args);
 
@@ -54,7 +54,4 @@ class Console {
   }
 }
 
-// (async () => {
-//   const console = new Console("red", "bgGreen");
-//   console.error("Hello World");
-// })();
+export default Console;
