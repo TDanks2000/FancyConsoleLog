@@ -1,0 +1,21 @@
+{
+  "name": "@tdanks2000/fancyconsolelog",
+  "version": "0.0.1",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "description": "A fancy console log for node.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "chalk": "4.1.0",
+    "dayjs": "^1.11.7"
+  }
+}
