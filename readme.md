@@ -35,6 +35,11 @@ import Console from "@tdanks2000/fancyconsolelog";
 const console = new Console();
 Console.log("Hello World!");
 
+// logs a message with a custom color using the setColor function
+const console = new Console();
+console.setColor("red");
+Console.log("Hello World!"); 
+
 // logs a message with a custom color
 const console = new Console("red");
 Console.log("Hello World!");
