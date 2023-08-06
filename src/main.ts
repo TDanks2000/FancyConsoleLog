@@ -1,24 +1,26 @@
-import chalk, { Color } from "chalk";
+import chalk, { BackgroundColor as Background, ForegroundColor } from "chalk";
 import { utils } from "./utils";
 
+type Color = typeof ForegroundColor;
+type BackgroundColor = typeof Background;
+
 class Console {
-  color?: typeof Color;
-  background?: typeof Color;
+  color?: Color;
+  background?: BackgroundColor;
 
   /**
    *
    * @param color color of the text
    * @param background background color of the text
-   * @param font font style of the text
+   * @param foreground foreground color of the text
    */
-  constructor(color?: typeof Color, background?: typeof Color) {
+  constructor(color?: Color, background?: BackgroundColor) {
     this.color = color;
     this.background = background;
   }
 
-  log(message: string, ...args: any): any {
-    if (this.color && !this.background)
-      return console.log(chalk[this.color](message), ...args);
+  log(message: any, ...args: any): any {
+    if (this.color && !this.background) return console.log(chalk[this.color](message), ...args);
 
     if (this.background && !this.color)
       return console.log(chalk[this.background](message), ...args);
@@ -29,22 +31,35 @@ class Console {
     return console.log(message, ...args);
   }
 
-  error(message: string, ...args: any) {
+  error(message: any, ...args: any) {
     const date = this.prependDate();
 
     console.log(`${date} ${chalk.redBright(`${message} ${args}`)}`);
   }
 
-  warn(message: string, ...args: any) {
+  warn(message: any, ...args: any) {
     const date = this.prependDate();
 
     console.log(`${date} ${chalk.hex("#FFA500")(`${message} ${args}`)}`);
   }
 
-  info(message: string, ...args: any) {
+  info(message: any, ...args: any) {
     const date = this.prependDate();
 
     console.log(`${date} ${chalk.yellowBright(`${message} ${args}`)}`);
+  }
+
+  public setColor(color: Color) {
+    this.color = color;
+  }
+
+  public setBackground(background: BackgroundColor) {
+    this.background = background;
+  }
+
+  public setColors(color: Color, background?: BackgroundColor) {
+    this.color = color;
+    if (background) this.background = background;
   }
 
   private prependDate() {
