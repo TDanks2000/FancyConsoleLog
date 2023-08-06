@@ -1,10 +1,14 @@
+<h1 align="center"> Fancy Console Log </h1> 
+
+<br />
+
 <p align="center">
   <a href="https://www.npmjs.com/package/@tdanks2000/fancyconsolelog">
     <img src="https://img.shields.io/npm/v/@tdanks2000/fancyconsolelog" alt="npm (scoped)">
   </a>
 </p>
 
-# Fancy Console Log
+<br />
 
 Fancy Console Log is a simple library that allows you to log messages to the console in a more readable format.
 
