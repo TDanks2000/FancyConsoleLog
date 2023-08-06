@@ -1,6 +1,6 @@
 {
   "name": "@tdanks2000/fancyconsolelog",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "publishConfig": {
@@ -21,7 +21,7 @@
   "description": "A fancy console log for node.js",
   "scripts": {
     "build": "tsc",
-    "postversion": "tsc build"
+    "postversion": "tsc"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
