@@ -33,32 +33,32 @@ import Console from "@tdanks2000/fancyconsolelog";
 
 // logs a message
 const console = new Console();
-Console.log("Hello World!");
+console.log("Hello World!");
 
 // logs a message with a custom color using the setColor function
 const console = new Console();
 console.setColor("red");
-Console.log("Hello World!"); 
+console.log("Hello World!"); 
 
 // logs a message with a custom color
 const console = new Console("red");
-Console.log("Hello World!");
+console.log("Hello World!");
 
 // logs a message with a custom color and background color
 const console = new Console("red", "bgBlue");
-Console.log("Hello World!");
+console.log("Hello World!");
 
 // log a error message
 const console = new Console();
-Console.error("Hello World!");
+console.error("Hello World!");
 
 // log a warning message
 const console = new Console();
-Console.warn("Hello World!");
+console.warn("Hello World!");
 
 // log a info message
 const console = new Console();
-Console.info("Hello World!");
+console.info("Hello World!");
 ```
 
 ## Contributing
