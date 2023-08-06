@@ -3,7 +3,7 @@
 <br />
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@tdanks2000/fancyconsolelog">
+  <a href="https://www.npmjs.com/package/@tdanks2000/fancyconsolelog" target="_blank">
     <img src="https://img.shields.io/npm/v/@tdanks2000/fancyconsolelog" alt="npm (scoped)">
   </a>
 </p>
